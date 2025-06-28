@@ -24,13 +24,13 @@ Organize Airtable tags
 The output will look like this:
 
 Fundraising
-- Call with sam
-- Send email to samir
+- Call with Sam
+- Send email to Samir
 
 
 Ops
-- Organize airtable
-- Organize airtable tags
+- Organize Airtable
+- Organize Airtable tags
 
 Product
 - Review product feedback
