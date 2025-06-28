@@ -1,10 +1,12 @@
 ***Founder Task Cleaner*** is a python script that was created to help startup operators and founders clean up messy, unorganized task lists. It streamlines tasks to reduce clutter, categorizes them, and produces a clarified task list.
 
 **Inspiration**
+
 As someone without a deep technical background, I built this to push myself outside my comfort zone and solve a real problem I’ve seen repeatedly in early-stage startups: founders having to juggle chaotic, unstructured to-do lists. 
 This tool reflects how I think about leverage, not by building something overly flashy, but by reducing friction and helping teams move faster. It’s simple by design, and useful by intent.
 
 **How it Works**
+
 In the file labelled "sample_tasks.txt", the user can add or edit tasks, then run the program using python task_cleaner.py. 
 The program will output a file labelled "cleaned_tasks.md", which will contain the organized version of the user's task list.
 
