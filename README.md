@@ -40,3 +40,29 @@ Other
 Startup environments can get messy. Going from the ground up is not an easy task by any measure. This tool turns chaos into clarity with one script, giving founders a quick way to focus on what matters most.
 
 Mahamadou Jagana
+
+Update Notes
+v1.1
+
+This version of Founder Task Cleaner expands on the original script by adding logic to help founders not only clean and organize their task lists, but also prioritize them. I originally sought to make a standalone script that prioritizes lists, but figured it could only make my preexisting script better. The tool now supports triage-style sorting to better reflect how early-stage founders may think and operate.
+
+What's New:
+
+*Task Triage Buckets*
+Tasks are now categorized into three actionable groups:
+- 🔴 Must Act
+- 🟡 Delegate
+- 🟣 Track Later
+
+*Keyword-Based Sorting*
+Tasks are routed into categories using simple keyword logic that reflects typical startup workflows
+
+*Improved Output Format*
+The output file is now grouped by action category, making it easier to scan and execute
+
+*Expanded Purpose*
+The tool has shifted from basic organization to a lightweight decision-support mimic assistant designed to help founders focus on what matters most and protect their time
+
+This update is built on the same intent as the original version, and reflects how I approach operational leverage in messy, fast-moving environments.
+
+Mahamadou Jagana
