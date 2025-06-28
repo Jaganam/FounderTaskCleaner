@@ -38,3 +38,5 @@ Product
 Other
 
 Startup environments can get messy. Going from the ground up is not an easy task by any measure. This tool turns chaos into clarity with one script, giving founders a quick way to focus on what matters most.
+
+Mahamadou Jagana
