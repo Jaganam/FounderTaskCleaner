@@ -22,9 +22,11 @@ Review product feedback
 Organize Airtable tags
 
 The output will look like this:
+
 Fundraising
 - Call with sam
 - Send email to samir
+
 
 Ops
 - Organize airtable
