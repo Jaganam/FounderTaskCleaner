@@ -3,23 +3,32 @@ with open("sample_tasks.txt", "r") as file:
 
 cleaned = set(task.strip().lower() for task in tasks if task.strip())
 
-categorized = {"Ops": [], "Fundraising": [], "Product": [], "Other": []}
+triaged = {"Must Act": [], "Delegate": [], "Track Later": []}
 
 for task in cleaned:
-    if "email" in task or "call" in task:
-        categorized["Fundraising"].append(task)
-    elif "organize" in task or "airtable" in task:
-        categorized["Ops"].append(task)
-    elif "product" in task:
-        categorized["Product"].append(task)
+    if any(keyword in task for keyword in ["email", "call", "update", "build", "follow up", "revisit"]):
+        triaged["Must Act"].append(task)
+    elif any(keyword in task for keyword in ["ask", "ping", "check with", "send to", "send"]):
+        triaged["Delegate"].append(task)
+    elif any(keyword in task for keyword in ["explore", "maybe", "idea"]):
+        triaged["Track Later"].append(task)
     else:
-        categorized["Other"].append(task)
+        triaged["Must Act"].append(task)  # default bucket
 
 with open("cleaned_tasks.md", "w") as out:
-    for category, tasks in categorized.items():
-        out.write(f"## {category}\n")
+    out.write("# Task Triage – Chaos to Clarity (v1)\n\n")
+    
+    for category, tasks in triaged.items():
+        icon = {
+            "Must Act": "🔴",
+            "Delegate": "🟡",
+            "Track Later": "🟣"
+        }[category]
+        
+        out.write(f"## {icon} {category}\n\n")
         for t in tasks:
             out.write(f"- {t.capitalize()}\n")
         out.write("\n")
 
-print("✅ Tasks cleaned and saved to cleaned_tasks.md")
+print("✅ Task triage complete. See cleaned_tasks.md!")
+
